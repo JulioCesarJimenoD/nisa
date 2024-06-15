@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se muevan a la siguiente línea */
+    justify-content: space-between; /* Espacio entre los elementos */
+    /* margin: 20px; */
+}
+
+.box {
+    /* background-color: red; */
+    color: #AF9ED8;
+    
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 100%; /* Por defecto, ocupan 100% del ancho en pantallas pequeñas */
+}
+
+.box2 {
+    /* background-color: lightblue; */
+    color: #AF9ED8;
+    
+    /* padding: 20px; */
+    margin-top: 10px;
+    margin-left: 32px;
+    /* margin: 10px; */
+    flex: 1 1 100%; /* Por defecto, ocupan 100% del ancho en pantallas pequeñas */
+}
+
+
+/* Media query para pantallas de escritorio */
+@media (min-width: 768px) {
+    .box {
+        flex: 1 1 45%; /* En pantallas grandes, ocupan aproximadamente el 45% del ancho cada uno */
+    }
+}

@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+
+body {
+    background: #F5F5F5;
+}
+
+header {
+    height: 50px;
+}
+
+.container__header {
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 40px;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.menu nav ul {
+    display: flex;
+}
+
+.menu nav ul li {
+    list-style: none;
+    padding: 0px 20px;
+}
+
+.menu nav ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #8BCFDB;
+    transition: opacity 300ms;
+}
+
+.menu nav ul li a:hover {
+    opacity: 0.6;
+}
+
+#icon_menu {
+    display: none;
+}
+
+
+main {
+    max-width: 1200px;
+    height: calc(95vh);
+    padding: 40px;
+    margin: auto;
+}
+
+.formulario {
+    margin-top: -750px;
+}
+
+.media_cover img {
+    width: 80%;
+    margin-top: -100px;
+    margin-left: 340px;
+}
+
+.date {
+    display: flex;
+}
+
+.hora {
+    margin-left: 20px;
+}
+
+
+.nice-form-group>input[type=time] {
+    color: #525252;
+}
+
+.nice-form-group>input[type=date],
+.nice-form-group>input[type=number],
+.nice-form-group>input[type=tel],
+.nice-form-group>input[type=text],
+.nice-form-group>select,
+.nice-form-group>textarea {
+    width: 40%;
+    font-size: 15px;
+    color: #525252;
+
+}
+
+.Cosnulta {
+    display: block;
+    justify-content: center;
+    margin-top: 60px;
+}
+.cover{
+    margin-top:-24px;
+}
+.Cosnulta h1 {
+    font-size: 35px;
+    color: #8BCFDB;
+}
+
+
+
+.Cosnulta label {
+    font-size: 20px;
+    color: #8BCFDB;
+}
+
+
+.button_consulta {
+    /* margin-top: 1px; */
+    margin-left: 10px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.btn_consulta {
+    margin-top: 30px;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    background: #8BCFDB;
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background, color, 300ms;
+}
+
+.btn_consulta:hover {
+    background: #fff;
+    color: #8BCFDB;
+}
+
+.horario{
+    font-size: 20px;
+    margin-top: 20px;
+    color: #8BCFDB;
+
+}
+
+
+.horario p {
+    /* margin-top: 20px; */
+    color: #8BCFDB;
+
+}
+
+
+.logi {
+    border-color: #E5E7EB;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: #af9ed8;
+    margin-top: 80px;
+    text-align: center; 
+}
+
+.hr{
+    color:#af9ed8;
+}
+
+
+@media (max-width: 1024px) {
+
+    .logo img {
+        width: 40px;
+    }
+
+
+    .conslta{
+        padding: auto;
+    }
+
+    #icon_menu {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: #8BCFDB;
+    }
+
+    .media_cover {
+        display: none;
+    }
+
+    .menu {
+        height: 0px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0px 0px 30px -20px #8BCFDB;
+        transition: all 300ms;
+    }
+
+    .menu nav ul {
+        padding: 20px 0px;
+        flex-direction: column;
+        background: #fff;
+    }
+
+    .menu nav ul li {
+        padding: 10px 40px;
+    }
+
+    .mostrar_menu {
+        /*CLASE MANIPULADA POR JS*/
+        height: 235px;
+    }
+
+    .Cosnulta h1 {
+        margin-top: -40px;
+        font-size: 35px;
+        color: #8BCFDB;
+    }
+
+    .formulario {
+        display: table;
+        margin-top: 10px;
+    }
+
+    nice-form-group>input[type=date],
+    .nice-form-group>input[type=number],
+    .nice-form-group>input[type=tel],
+    .nice-form-group>input[type=text],
+    .nice-form-group>select,
+    .nice-form-group>textarea {
+        width: 100%;
+        font-size: 15px;
+        color: #525252;
+
+    }
+
+    .btn_consulta{
+        margin-top: 40px;
+        margin-left: 75px;
+    }
+    .logi{
+        text-align: center;
+        margin-top: 50px;
+        padding: 10px;
+    }
+
+
+}
+
+@media (max-width: 920px) {
+    .text__information-cover {
+        width: 100%;
+    }
+
+    .media__cover {
+        display: none;
+    }
+
+
+}
